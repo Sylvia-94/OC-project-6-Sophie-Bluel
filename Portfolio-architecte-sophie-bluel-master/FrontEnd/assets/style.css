@@ -186,3 +186,29 @@ footer nav ul {
 	margin: 2em
 }
 
+/* Ajout de propriétés CSS pour les boutons filtres */
+.filters {
+
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	flex-wrap: nowrap;
+	gap: 10px;
+	padding-bottom: 30px;	
+}
+.filters .btn-selected {
+	color: white;
+	background-color: #1D6154;
+}
+
+.filters button {
+	font-family: "Syne";
+	color :#1D6154;
+	border: 1px solid #1D6154;
+	border-radius: 60px;
+	background-color: white;
+	padding-right: 20px;
+	font-size: 16px;
+	padding: 9px 12px;
+}
+
