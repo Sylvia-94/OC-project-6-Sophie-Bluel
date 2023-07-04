@@ -287,6 +287,11 @@ font-size: 16px;
 display: none;
 }
 
+.visible {
+
+display: block;
+}
+
 /* style pour les éléments ajoutés en mode admin */
 .admin-banner {
 
@@ -372,19 +377,29 @@ padding-bottom: 100px;
 /* style pour la fenêtre modale  */
 
 .modal {
-
+position: fixed;
+top: 0px;
+left:400px;
 width: 630px;
 display: flex;
 flex-direction: column;
 align-items: center;
 border: none;
 border-radius: 10px;
+background-color: white;
 
 }
 
-.modal::backdrop{
+.modal-backdrop{
+position: fixed;
+top: 0px;
+right: 0px;
+left: 0px;
+bottom: 0px;
+height: 100%;
+width: 100%;
+background-color:rgba(0, 0, 0, 0.30);
 
-background: rgba(0, 0, 0, 0.3);
 }
 
 .close-modal {
@@ -403,7 +418,7 @@ font-family: "Work Sans";
 font-size: 26px;
 font-weight: 400;
 color: black;
-padding-top: 60px;
+padding-top: 50px;
 }
 
 .mini-photos-gallery {
@@ -421,7 +436,7 @@ position: relative;
 
 .mini-figure:nth-child(n+2) .arrow-btn {
 
-	display: none;
+display: none;
 }
 
 .mini-img {
@@ -478,4 +493,138 @@ cursor: pointer;
 .remove-all {
 
 color: red;
+padding-bottom: 30px;
+}
+
+
+.modal-add-new-work {
+position: fixed;
+top: 0px;
+left: 450px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: white;
+border-radius: 10px;
+padding: 60px 105px;
+
+}
+
+.going-back {
+position: absolute;
+top: 25px;
+left: 30px;
+cursor: pointer;
+color : black;
+}
+.modal-photos-title {
+
+font-family: "Work Sans";
+font-size: 26px;
+font-weight: 400;
+color: black;
+padding-bottom: 35px;
+
+}
+.form-new-work {
+gap : 45px;
+display: flex;
+flex-direction: column;
+align-items: center;	
+}
+
+.div-add-photo {
+width: 420px;
+height: 170px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap : 10px;
+border-radius: 3px;
+background: #E8F1F6; 
+}
+
+.text-field {
+width: 420px;
+height: 51px; 
+background: #FFF;
+box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+border: none;
+}
+
+#submit-btn {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 237px;
+height: 36px; 
+border-radius: 60px;
+border: none;
+background-color: #A7A7A7; 
+font-family: Syne; 
+font-weight: 700;
+font-size: 14px;
+color: white;
+cursor: pointer;
+
+}
+
+#submit-btn-ok{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 237px;
+	height: 36px; 
+	border-radius: 60px;
+	border: none;
+	background-color:  #1D6154;
+	font-family: Syne; 
+	font-weight: 700;
+	font-size: 14px;
+	color: white;
+	cursor: pointer;
+
+}
+
+.photo-icon {
+
+height: 58px;
+width: 58px;
+}
+
+.label-add-photo {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 173px;
+height: 36px; 
+border: none;
+border-radius: 50px;
+background: #CBD6DC;
+color: #306685; 
+font-size: 14px;
+font-family: "Work Sans";
+font-weight: 500; 
+cursor: pointer;
+
+}
+
+.file-input {
+display: none;
+
+}
+
+.photos-dimensions {
+font-size: 10px;
+font-family: "Work Sans"; 
+font-weight: 400; 
+
+}
+
+.photo-mini-format {
+
+max-height: 170px;
+width: 145px;
+
 }
