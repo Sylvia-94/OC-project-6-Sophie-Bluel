@@ -17,19 +17,16 @@ async function userConnexionRequest (url, data){
   })
 
   const result = await response.json();
-  console.log(result);
   
 // si reponse.json (ou result) contient le token d'authentification,
 //alors on stocke le token dans le LS et on redirige vers la page index.html (en mode admin)
   if(result.hasOwnProperty("token")){
     localStorage.setItem("token", result.token)
-    console.log(localStorage);
     window.location.href = "./index.html"
 //sinon, affichage du messag d'erreur
   }else{
     msgError.classList.remove("invisible")
   }
-  
 }
 
 

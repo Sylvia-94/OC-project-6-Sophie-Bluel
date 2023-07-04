@@ -215,6 +215,11 @@ footer nav ul {
 
 /* Style pour le formulaire de connexion */
 
+.body {
+
+background-color: #FFFEF8;
+}
+
 .log-link {
 text-decoration: none;
 color: black;
@@ -247,14 +252,17 @@ gap: 50px;
 
 .text-field {
 
-	display: flex;
-	flex-direction: column;
+border: none;
+width: 379px;
+height: 51px;
+display: flex;
+flex-direction: column;
 }
 
-.text-field input {
-
-	width: 379px;
-	height: 51px;
+.inputs{
+	display: flex;
+	flex-direction: column;
+	gap : 5px;
 }
 
 #connect-btn {
@@ -377,10 +385,7 @@ padding-bottom: 100px;
 /* style pour la fenêtre modale  */
 
 .modal {
-position: fixed;
-top: 0px;
-left:400px;
-width: 630px;
+width : 630px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -392,6 +397,9 @@ background-color: white;
 
 .modal-backdrop{
 position: fixed;
+display: flex;
+justify-content: center;
+align-items: center;
 top: 0px;
 right: 0px;
 left: 0px;
@@ -401,12 +409,24 @@ width: 100%;
 background-color:rgba(0, 0, 0, 0.30);
 
 }
+.btn-div{
+width: 88%;
+display : flex;
+flex-direction: row;
+justify-content:  flex-end;
+margin-top: 25px;
+}
 
+.btns-div {
+
+width : 95%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
 .close-modal {
 
-position: absolute;
-top: 32px;
-right: 36px;
 cursor: pointer;
 }
 
@@ -418,11 +438,11 @@ font-family: "Work Sans";
 font-size: 26px;
 font-weight: 400;
 color: black;
-padding-top: 50px;
+padding-top: 30px;
 }
 
 .mini-photos-gallery {
-padding: 45px 105px;
+padding: 35px 105px;
 display: flex;
 flex-wrap: wrap;
 justify-content: flex-start;
@@ -435,12 +455,10 @@ position: relative;
 }
 
 .mini-figure:nth-child(n+2) .arrow-btn {
-
 display: none;
 }
 
 .mini-img {
-
 width: 75px;
 height: 100px;
 }
@@ -498,22 +516,17 @@ padding-bottom: 30px;
 
 
 .modal-add-new-work {
-position: fixed;
-top: 0px;
-left: 450px;
+width : 630px;
 display: flex;
 flex-direction: column;
 align-items: center;
 background-color: white;
 border-radius: 10px;
-padding: 60px 105px;
+padding: 20px ;
 
 }
 
 .going-back {
-position: absolute;
-top: 25px;
-left: 30px;
 cursor: pointer;
 color : black;
 }
@@ -523,11 +536,11 @@ font-family: "Work Sans";
 font-size: 26px;
 font-weight: 400;
 color: black;
-padding-bottom: 35px;
+padding-bottom: 25px;
 
 }
 .form-new-work {
-gap : 45px;
+gap : 40px;
 display: flex;
 flex-direction: column;
 align-items: center;	
@@ -565,6 +578,8 @@ background-color: #A7A7A7;
 font-family: Syne; 
 font-weight: 700;
 font-size: 14px;
+margin-top: 20px;
+margin-bottom: 10px;
 color: white;
 cursor: pointer;
 
@@ -582,6 +597,7 @@ cursor: pointer;
 	font-family: Syne; 
 	font-weight: 700;
 	font-size: 14px;
+	margin-bottom: 10px;
 	color: white;
 	cursor: pointer;
 
