@@ -320,7 +320,7 @@ export default function adminMode (){
     
 
   /**
- * Fonction qui fait apparaître la photo selectionnée
+ * EL qui fait apparaître la photo selectionnée
  *  via l'input ajout de photo
  */
   fileInput.addEventListener("change", function (e){
@@ -344,7 +344,7 @@ export default function adminMode (){
     
   //ajout du champ de texte titre
   const labelTitle = document.createElement("label");
-  labelTitle.innerHTML = "Titre"
+  labelTitle.innerHTML = "Titre (5 caractères minimum)";
   const titleInput = document.createElement("input");
   titleInput.classList.add("text-field");
   titleInput.setAttribute("type", "text");
@@ -398,6 +398,7 @@ export default function adminMode (){
     submitBtn.setAttribute("type", "submit");
     submitBtn.setAttribute("id", "submit-btn");
     submitBtn.setAttribute("value", "Valider");
+    submitBtn.setAttribute("disabled", "");
     
     //msg d'erreur
     const msgErrorForm = document.createElement("p");
@@ -433,10 +434,12 @@ export default function adminMode (){
     
       element.addEventListener("change", function(){
         //vérification que les champs ne soient pas vides
-        if (fileInput.files.length > 0 && titleInput.value.length > 5) {
+        if (fileInput.files.length > 0 && titleInput.value.length >= 5) {
           //affichage du bouton de validation en vert
           submitBtn.setAttribute("id", "submit-btn-ok");
+          submitBtn.removeAttribute("disabled","");
           msgErrorForm.classList.add("invisible");
+        
 
           //EL sur le bouton valider, création du formData pour récupérer les données
           //puis requête POST
