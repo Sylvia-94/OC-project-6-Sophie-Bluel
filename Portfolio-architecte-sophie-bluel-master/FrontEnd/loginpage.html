@@ -12,9 +12,13 @@
     />
     <meta name="description" content="" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="body">
     <header>
@@ -23,32 +27,60 @@
         <ul>
           <li>projets</li>
           <li>contact</li>
-          <li><a href="./loginpage.html" id="logs-link" class="log-link log-link-active" >login</a></li>
+          <li>
+            <a
+              href="./loginpage.html"
+              id="logs-link"
+              class="log-link log-link-active"
+              >login</a
+            >
+          </li>
           <li><img src="./assets/icons/instagram.png" alt="Instagram" /></li>
         </ul>
       </nav>
     </header>
     <div class="login-section">
-        <h2>Log In</h2>
-        <form action="" class="login-form">
-            <div class="inputs">
-            <label for="email">E-mail</label>
-            <input class="text-field" type="email" required id="email" name="email"></div>
-            <div class="inputs">
-            <label for="password">Mot de passe</label>
-            <input class="text-field" type="password" required id="password" name="password"></div>
-            <p class="invalid-msg invisible">E-mail ou mot de passe incorrect</p>
-            <div class="connect">
-            <input type="button" id="connect-btn" name="connect-btn" value="Se connecter"></div>
-            <p class="pw-forgotten">Mot de passe oublié</p>
-        </form>
+      <h2>Log In</h2>
+      <form action="" class="login-form">
+        <div class="inputs">
+          <label for="email">E-mail</label>
+          <input
+            class="text-field"
+            type="email"
+            required
+            id="email"
+            name="email"
+          />
+        </div>
+        <div class="inputs">
+          <label for="password">Mot de passe</label>
+          <input
+            class="text-field"
+            type="password"
+            required
+            id="password"
+            name="password"
+          />
+        </div>
+        <p class="invalid-msg invisible">E-mail ou mot de passe incorrect</p>
+        <div class="connect">
+          <input
+            type="button"
+            id="connect-btn"
+            name="connect-btn"
+            value="Se connecter"
+          />
+        </div>
+        <p class="pw-forgotten">Mot de passe oublié</p>
+      </form>
     </div>
     <footer>
-        <nav>
-          <ul>
-            <li>Mentions Légales</li>
-          </ul>
-        </nav>
-      </footer>
-      <script src="./login.js"  type="module"></script>
+      <nav>
+        <ul>
+          <li>Mentions Légales</li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./login.js" type="module"></script>
+  </body>
 </html>
